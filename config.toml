@@ -12,7 +12,7 @@ authorImage = "/images/profile.jpg"
 paginate = 5 
 Title = "GaittyStore"
 content = "Passion within, yet remain composed."
-imageUrl = "/images/avatar.jpg"
+imageUrl = "/images/avatar_hui.jpg"
 
 # 添加新的社交图标
 # 更多社交图标可以在JuiceBar\layouts\partials\svg.html中找到
@@ -30,7 +30,7 @@ url = "https://twitter.com/G_bai_"
 
 [[params.social]]
 name = "email"
-url = "fangxiaobaitop@gmail.com"
+url = "mailto:fangxiaobaitop@gmail.com"
 
 [taxonomies]
 category = "categories"
