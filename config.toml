@@ -18,27 +18,18 @@ imageUrl = "/images/avatar.jpg"
 [[params.social]]
 name = "Github"
 url = "https://github.com/hotjuicew"
+
 [[params.social]]
 name = "telegram"
 url = "https://t.me/Hotjuice"
+
 [[params.social]]
-name = "twitter"
+name = "x-twitter"
 url = "https://twitter.com/hotjuicee"
+
 [[params.social]]
 name = "email"
 url = "mailto:hotjuicew@outlook.com"
-[[params.social]]
-name = "instagram"
-url = "your_url"
-[[params.social]]
-name = "mastodon"
-url = "your_url"
-[[params.social]]
-name = "reddit"
-url = "your_url"
-[[params.social]]
-name = "stackoverflow"
-url = "your_url"
 
 [taxonomies]
 category = "categories"
