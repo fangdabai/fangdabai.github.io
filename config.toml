@@ -3,34 +3,34 @@
 baseURL = 'https://gaiety.store/'
 languageCode = 'en-us'
 theme = "JuiceBar"
-title = "your_blog_title"
+title = "GaittyStore"
 
 [params]
-author = "your_name"
+author = "gaietyBai"
 description = "My site description"
 authorImage = "/images/profile.jpg"
 paginate = 5 
-Title = "your_blog_title"
-content = "I'm JuiceBar, nice to meet you(ˊ˘ˋ*)♡"
+Title = "GaittyStore"
+content = "Passion within, yet remain composed."
 imageUrl = "/images/avatar.jpg"
 
 # 添加新的社交图标
 # 更多社交图标可以在JuiceBar\layouts\partials\svg.html中找到
 [[params.social]]
 name = "Github"
-url = "https://github.com/hotjuicew"
+url = "https://github.com/fangdabai"
 
 [[params.social]]
 name = "telegram"
-url = "https://t.me/Hotjuice"
+url = ""
 
 [[params.social]]
 name = "x-twitter"
-url = "https://twitter.com/hotjuicee"
+url = "https://twitter.com/G_bai_"
 
 [[params.social]]
 name = "email"
-url = "mailto:hotjuicew@outlook.com"
+url = "fangxiaobaitop@gmail.com"
 
 [taxonomies]
 category = "categories"
