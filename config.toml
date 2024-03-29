@@ -1,5 +1,6 @@
-baseURL = 'https://fangdabai.github.io/'
 # baseURL = 'http://example.org/' 
+# baseURL = 'https://fangdabai.github.io/'
+baseURL = 'https://gaiety.store/'
 languageCode = 'en-us'
 theme = "JuiceBar"
 title = "your_blog_title"
