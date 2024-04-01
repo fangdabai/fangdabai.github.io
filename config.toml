@@ -1,7 +1,8 @@
 # baseURL = 'http://example.org/' 
 # baseURL = 'https://fangdabai.github.io/'
 baseURL = 'https://gaiety.store/'
-languageCode = 'en-us'
+# languageCode = 'en-us'
+languageCode = 'zh-CN'
 theme = "JuiceBar"
 title = "GaittyStore"
 
@@ -48,17 +49,17 @@ name = "Categories"
 url = "/categories"
 
 # 如果使用giscus评论系统
-#[params.giscus]
-#repo = "ENTER REPO HERE"
-#repoID = "ENTER REPO ID HERE"
-#category = "ENTER CATEGORY NAME HERE"
-#categoryID = "ENTER CATEGORY ID HERE"
-#mapping = "og:title"
-#reactionsEnabled = "1"
-#emitMetadata = "0"
-#inputPosition = "bottom"
-#lang = "en"
-#loading = "lazy"
+[params.giscus]
+repo = "fangdabai/fangdabai.github.io"
+repoID = "R_kgDOLmFyAQ"
+category = "Announcements"
+categoryID = "DIC_kwDOLmFyAc4CeXbj"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "en"
+loading = "lazy"
 
 #用于输出文档的设置（必须的）
 [outputs]
