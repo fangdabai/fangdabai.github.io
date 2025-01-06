@@ -69,3 +69,111 @@ git push
 5、打开仓库 Repository Settings 的 Pages ，我们发现 Custom domain 变为我们的域名，若没有自行更改即可，选择 Enforce HTTPS 为你的网站添加小绿锁，配置后需要等一会才可以生效~
 
 6、设置完成后就可以通过你的域名访问部署在GitHub上的Hugo的网站啦
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 一、搭建本地hugo站点
+
+
+
+1、首先要创建一个站点
+
+hugo new site quickstart 
+
+
+
+2、将该目录（quickstart）作为项目的根目录,
+
+cd quickstart
+
+
+
+3、引入主题
+
+把下载好的主题放到quickstart\themes目录中
+
+
+
+4、运行服务
+
+hugo server
+
+
+
+
+
+# 二、在github page上托管hugo站点
+
+
+
+1、创建github仓库
+
+命名为 username/github.io	Public
+
+
+
+2、根据提示初始化仓库
+
+**…or create a new repository on the command line**
+
+```
+echo "# test" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fangdabai/test.git
+git push -u origin main
+```
+
+**…or push an existing repository from the command line**
+
+```
+git remote add origin https://github.com/fangdabai/test.git
+git branch -M main
+git push -u origin main
+```
+
+推送站点到远程
+
+~~~
+git remote -v
+git add .
+git commit -m "推送站点文件"
+git push origin main 
+~~~
+
+
+
+3、settings->  Pages -> Github Actions
+
+然后根据提示 configure hugo站点，会自动生成\\.github\workflows\hugo.yml的配置文件
+
+远程分支拉取到本地，保持同步
+
+```
+git pull origin main
+```
+
+
+
+此时直接访问
+
+xxx.github.io即可
+
+
+
