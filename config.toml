@@ -1,7 +1,7 @@
 # baseURL = 'http://example.org/' 
-# baseURL = 'https://fangdabai.github.io/'
+baseURL = 'https://fangdabai.github.io/'
 # baseURL = 'https://gaiety.store/'
-baseURL = 'https://blog.heibai.store/'
+# baseURL = 'https://blog.heibai.store/'
 
 # languageCode = 'en-us'
 languageCode = 'zh-CN'
