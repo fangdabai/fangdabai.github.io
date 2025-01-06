@@ -177,3 +177,23 @@ xxx.github.io即可
 
 
 
+# 三、配置域名
+
+
+
+3、在本地仓库根目录中创建 CNAME 文件，内容是你的域名（不要加http头），并修改hugo配置文件
+
+~~~bash
+touch CNAME
+echo "xxx.xxx" > CNAME
+~~~
+
+修改Hugo 根目录中的配置文件config.toml
+
+~~~bash
+# baseURL = 'https://fangdabai.github.io/'
+baseURL = 'https://xxx.xxx/'
+~~~
+
+在 Hugo 根目录中的配置文件中填写 `baseURL` 时，应该选择适合你网站部署情况的那一个，即根据你的网站是部署在 GitHub Pages 还是自己的服务器上。
+
