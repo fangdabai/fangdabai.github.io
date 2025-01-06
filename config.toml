@@ -1,0 +1,68 @@
+# baseURL = 'http://example.org/' 
+baseURL = 'https://fangdabai.github.io/'
+# baseURL = 'https://gaiety.store/'
+# baseURL = 'https://blog.heibai.store/'
+
+# languageCode = 'en-us'
+languageCode = 'zh-CN'
+theme = "JuiceBar"
+title = "GaittyStore"
+
+[params]
+author = "gaietyBai"
+description = "My site description"
+authorImage = "/images/profile.jpg"
+paginate = 5 
+Title = "GaittyStore"
+content = "Passion within, yet remain composed."
+imageUrl = "/images/avatar_hui.jpg"
+
+# 添加新的社交图标
+# 更多社交图标可以在JuiceBar\layouts\partials\svg.html中找到
+[[params.social]]
+name = "Github"
+url = "https://github.com/fangdabai"
+
+[[params.social]]
+name = "telegram"
+url = ""
+
+[[params.social]]
+name = "x-twitter"
+url = "https://twitter.com/G_bai_"
+
+[[params.social]]
+name = "email"
+url = "mailto:fangxiaobaitop@gmail.com"
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+
+# 添加新的导航链接
+[[menu.main]]
+name = "About"
+url = "/about"
+[[menu.main]]
+name = "Blog"
+url = "/post"
+[[menu.main]]
+name = "Categories"
+url = "/categories"
+
+# 如果使用giscus评论系统
+[params.giscus]
+repo = "fangdabai/fangdabai.github.io"
+repoID = "R_kgDOLmFyAQ"
+category = "Announcements"
+categoryID = "DIC_kwDOLmFyAc4CeXbj"
+mapping = "og:title"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+lang = "en"
+loading = "lazy"
+
+#用于输出文档的设置（必须的）
+[outputs]
+home = ["HTML", "RSS", "JSON"]

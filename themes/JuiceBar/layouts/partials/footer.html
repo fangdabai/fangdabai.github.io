@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="content has-text-centered">
+        {{- if site.Copyright }}
+    <span>{{ site.Copyright | markdownify }}</span>
+    {{- else }}
+    <span>
+        &copy; {{ now.Year }} 
+        <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>
+    </span>
+    {{- end }}
+    <span>
+        &
+        <a href="https://github.com/fangdabai/hugoJuiceBar" target="_blank">hugoJuiceBar</a>
+    </span>
+    </div>
+  </footer>
