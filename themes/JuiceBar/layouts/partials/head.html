@@ -2,6 +2,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- 定义浏览器在本页面中的内容安全策略（CSP），值upgrade-insecure-requests的作用表示对页面中资源请求自动升级为https。比较适合页面中有太多资源的url是http协议。 -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>{{ if not .IsHome }}{{ with .Title }}{{ . }} | {{ end }}{{ end }}{{ .Site.Title }}</title>
     <meta name="description"
         content="{{ with .Description }}{{ . }}{{ else }}{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Params.description }}{{end }}{{ end }}">
