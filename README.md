@@ -146,9 +146,8 @@ xxx.github.io即可
 
 
 
-SVG Icon: https://fontawesome.com/search
+### powshell走v2rayN代理
 
-powshell走v2rayN代理：
 PS C:\Users\fxb\Desktop\HugoProject> $env:HTTP_PROXY = "socks5://127.0.0.1:10808"
 PS C:\Users\fxb\Desktop\HugoProject> $env:HTTPS_PROXY = "socks5://127.0.0.1:10808"
 PS C:\Users\fxb\Desktop\HugoProject> curl www.google.com
@@ -157,7 +156,102 @@ PS C:\Users\fxb\Desktop\HugoProject> curl www.google.com
 
 
 
-## hugo配置个人域名
+### 网页图标
+
+SVG Icon: https://fontawesome.com/search
+
+[图片转 ico 图标 - 锤子在线工具](https://www.toolhelper.cn/Image/ImageToIco)
+
+
+
+
+
+### http资源无法加载问题
+
+[解决https页面请求http出现Mixed Content.This request has been blocked； the content must be served over HTTPS._mixed content this request has been blocked; the c-CSDN博客](https://blog.csdn.net/z_johnny/article/details/143636824)
+
+
+
+
+
+### google_analytics_async模板问题
+
+你的 Hugo 项目在构建时出现了多个错误，主要是因为 `_internal/google_analytics_async.html` 模板已被移除，但你的主题或模板仍在引用它。以下是解决这些错误的步骤：
+
+------
+
+#### **1. 问题分析**
+
+- `_internal/google_analytics_async.html` 是 Hugo 的内置模板，但它在最近版本中被移除。
+- 你的主题 `JuiceBar` 中的 `partials/head.html` 文件仍然在引用这个已移除的模板。
+
+关键错误信息：
+
+```
+error calling partial: execute of template failed: html/template:partials/head.html:16:16: no such template "_internal/google_analytics_async.html"
+```
+
+#### **2. 解决方法**
+
+**方法 1：移除对 `_internal/google_analytics_async.html` 的引用**
+
+1. 打开主题目录：
+
+   ```
+   themes/JuiceBar/layouts/partials/head.html
+   ```
+
+2. 查找以下代码（大致在第 16 行）：
+
+   ```
+   {{ template "_internal/google_analytics_async.html" . }}
+   ```
+
+3. **注释掉或删除这行代码**。
+
+   例如：
+
+   ```
+   {{/* template "_internal/google_analytics_async.html" . */}}
+   ```
+
+4. 保存文件并重新构建站点：
+
+   ```
+   hugo
+   ```
+
+**方法 2：手动添加 Google Analytics 脚本**
+
+如果你需要继续使用 Google Analytics，替换已移除的 `_internal/google_analytics_async.html` 模板。
+
+1. 在 `head.html` 中手动添加 Google Analytics 的跟踪代码：
+
+   ```
+   html复制代码<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXX-X"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+     gtag('config', 'UA-XXXXXXX-X');
+   </script>
+   ```
+
+   其中，将 `UA-XXXXXXX-X` 替换为你的 Google Analytics 跟踪 ID。
+
+
+
+
+
+### hugo更新问题
+
+暂时未更新
+
+
+
+
+
+### hugo配置个人域名
 
 > 参考：https://zhuanlan.zhihu.com/p/422859066
 > 			https://cloud.tencent.com/developer/article/1834163
